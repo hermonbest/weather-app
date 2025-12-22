@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <form class="search-form">
+        <h1>Weather App</h1>
+        <div class="input-group">
+          <input type="text" placeholder="Enter city name" id="city-input" />
+          <button id="search-button">Search</button>
+        </div>
+      </form>
+      <div class="weather-container" id="weather-container">
+        <div class="current-weather">
+          <h2 class="city-name" id="city-name"></h2>
+          <div class="main-info">
+            <img
+              class="weather-icon"
+              id="weather-icon"
+              src=""
+              alt="Weather Icon"
+            />
+            <div class="temp-desc">
+              <p id="temperature"></p>
+              <p class="weather-description" id="weather-description"></p>
+            </div>
+          </div>
+          <div class="additional-info">
+            <div class="info-item">
+              <span class="label">Feels like:</span>
+              <span id="feels-like"></span>
+            </div>
+            <div class="info-item">
+              <span class="label">Humidity:</span>
+              <span id="humidity"></span>
+            </div>
+            <div class="info-item">
+              <span class="label">Wind:</span>
+              <span id="wind-speed"></span>
+            </div>
+            <div class="info-item">
+              <span class="label">Snow:</span>
+              <span id="visibility"></span>
+            </div>
+          </div>
+        </div>
+        <div class="forecast" id="forecast">
+          <h3>5-Day Forecast</h3>
+          <div class="forecast-days" id="forecast-days">
+            <!-- Forecast days will be inserted here -->
+          </div>
+        </div>
+      </div>
+      <div class="error-message" id="error-message"></div>
+    </div>
+  </body>
+</html>
