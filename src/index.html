@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/973c5b26a1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="app-container">
@@ -31,20 +41,32 @@
           </div>
           <div class="additional-info">
             <div class="info-item">
-              <span class="label">Feels like:</span>
-              <span id="feels-like"></span>
+              <i class="fa-solid fa-temperature-half"></i>
+              <div class="info-text">
+                <span class="label">Feels like:</span>
+                <span id="feels-like"></span>
+              </div>
             </div>
             <div class="info-item">
-              <span class="label">Humidity:</span>
-              <span id="humidity"></span>
+              <i class="fa-solid fa-droplet"></i>
+              <div class="info-text">
+                <span class="label">Humidity:</span>
+                <span id="humidity"></span>
+              </div>
             </div>
             <div class="info-item">
-              <span class="label">Wind:</span>
-              <span id="wind-speed"></span>
+              <i class="fa-solid fa-wind"></i>
+              <div class="info-text">
+                <span class="label">Wind:</span>
+                <span id="wind-speed"></span>
+              </div>
             </div>
             <div class="info-item">
-              <span class="label">Snow:</span>
-              <span id="visibility"></span>
+              <i class="fa-solid fa-snowflake"></i>
+              <div class="info-text">
+                <span class="label">Snow:</span>
+                <span id="visibility"></span>
+              </div>
             </div>
           </div>
         </div>
